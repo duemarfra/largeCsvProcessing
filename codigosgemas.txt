@@ -1,0 +1,13 @@
+### con el siguiente comando se construyó la gema:
+
+gem build largeCsvProcessing.gemspec
+
+
+### El siguiente comando sirve para instalar la gema de manera local:
+
+gem install ./largeCsvProcessing-0.1.0.gem
+
+
+### para ejecutar la gema instalada se puede acceder por irb:
+
+require 'csv_generator'
