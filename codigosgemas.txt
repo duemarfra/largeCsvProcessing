@@ -5,8 +5,11 @@ gem build largeCsvProcessing.gemspec
 
 ### El siguiente comando sirve para instalar la gema de manera local:
 
-gem install ./largeCsvProcessing-0.1.0.gem
+gem install ./largeCsvProcessing-0.1.1.gem
 
+### El siguiente comando sirve para instalar la gema de manera remota:
+
+gem install largeCsvProcessing
 
 ### para ejecutar la gema instalada se puede acceder por irb:
 

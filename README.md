@@ -10,4 +10,8 @@ csv_generator.rb es un programa que consta de dos partes, cada parte está en la
 
 2) Ya con este archivo... Se ejecuta el programa extractor, el cual pide un segundo numero que se multiplicará por 1_000_000 y devolverá ese numero de filas extraidas del primer archivo. (este archivo extracto.csv extrae las filas solicitadas de la pseudotabla anteriormente creada)
 
+(Ambos programas se ejecutan automaticamente y secuencialmente)
+
 # ESTE EJERCICIO SE CONVIRTIÓ EN GEMA!
+para ejecutar la gema instalada se puede acceder por irb:
+require 'csv_generator'

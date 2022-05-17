@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
     
     s.name        = 'largeCsvProcessing'
-    s.version     = '0.1.0'
+    s.version     = '0.1.1'
     s.authors     = ["Marcelo Dueñas"]
     s.email       = 'duemarfra@gmail.com'
     s.summary     = "This is a homework, my first gem!"
