@@ -1,17 +1,37 @@
-# -----------TAREA 1 LARGE CSV PROCESSING-----------!
+# -----------( ENGLISH ) TASK 1 - LARGE CSV PROCESSING-----------!
 
-Escribir el script csv_generator.rb que tome como parámetro un número entero y genere un extracto en millones de filas. Por ejemplo si se ejecuta con parámetro 1 entonces el extracto tendrá 1 millones de filas + 1 por la cabecera.
+Write the csv_generator.rb script that takes an integer as a parameter and generates an extract in millions of rows. For example, if it is executed with parameter 1, then the extract will have 1 million rows + 1 for the header.
 
-# FUNCIONAMIENTO Y OTROS DETALLES:
+# OPERATION AND OTHER DETAILS:
 
-csv_generator.rb es un programa que consta de dos partes, cada parte está en las carpetas lector y extractor respectivamente los cuales describo a continuación:
+1. csv_generator.rb: it is the main program in which an object is created based on the class located in ./generatr/generator.rb
 
-1) A falta de un archivo lector para extraer contenido como pide esta tarea, creé un programa en la carpeta lector, el cual ingresando un número crea un archivo csv de registros con la cantidad ingresada multiplicado por 1_000_000. (se puede decir que este archivo lector.csv es una pseudotabla de la base de datos)
+1.1 generator.rb: contains the Generator class, its variables are an input digit, the header and its 4 books. It also contains a "newFile" method which multiplies the input by a million and creates a file.csv by writing the header and so many million books to it.
 
-2) Ya con este archivo... Se ejecuta el programa extractor, el cual pide un segundo numero que se multiplicará por 1_000_000 y devolverá ese numero de filas extraidas del primer archivo. (este archivo extracto.csv extrae las filas solicitadas de la pseudotabla anteriormente creada)
+2. file.csv: In the first line is the header and in the following there will be as many millions of books as the input data says.
 
-(Ambos programas se ejecutan automaticamente y secuencialmente)
+# THIS EXERCISE BECAME A GEM!
 
-# ESTE EJERCICIO SE CONVIRTIÓ EN GEMA!
-para ejecutar la gema instalada se puede acceder por irb:
-require 'csv_generator'
+With the following command the gem was built:
+ gem build largeCsvProcessing.gemspec
+
+The following command is used to install the gem locally:
+ gem install ./largeCsvProcessing-1.0.0.gem
+
+The following command is used to install the gem remotely:
+ gem install largeCsvProcessing
+
+The following command is used to uninstall the gem:
+  gem uninstall largeCsvProcessing
+
+The following command is used to publish the gem to rubygems:
+gem push largeCsvProcessing-1.0.0.gem
+
+To run the installed gem it can be accessed by irb:
+ require 'csv_generator'
+
+ # BIBLIOGRAPHY
+
+ https://rubygems.org/?locale=es
+
+ https://blog.desafiolatam.com/crear-una-gema-ruby/

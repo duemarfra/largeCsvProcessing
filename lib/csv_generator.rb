@@ -1,12 +1,8 @@
-require_relative './lector/lector'
+require_relative './generatr/generator.rb'
 
-lecturaSemanal = Lector.new
-lecturaSemanal.nMillones = gets.chomp
-lecturaSemanal.nuevaLectura
+puts 'How many millions of books do you want?? (give me the number)'
+puts 'Example: 27 make a file.csv of 1GB, 432 make a file.csv of 16GB'
 
-
-require_relative './extractor/extractor'
-
-extracto = Extractor.new
-extracto.nMillones = gets.chomp
-extracto.nuevoExtracto
+lecturaSemanal = Generator.new
+lecturaSemanal.millions = gets.chomp
+lecturaSemanal.newFile
