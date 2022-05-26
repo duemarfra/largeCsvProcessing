@@ -26,7 +26,7 @@ Con el siguiente comando se construyó la gema:
 
 El siguiente comando sirve para instalar la gema de manera local:
 
-    gem install ./largeCsvProcessing-2.0.0.gem
+    gem install ./largeCsvProcessing-2.0.2.gem
 
 El siguiente comando sirve para instalar la gema de manera remota:
 
@@ -38,7 +38,7 @@ El siguiente comando sirve para desinstalar la gema:
 
 El siguiente comando sirve para publicar la gema en rubygems:
 
-    gem push largeCsvProcessing-2.0.0.gem
+    gem push largeCsvProcessing-2.0.2.gem
 
 Para ejecutar la gema instalada se puede acceder por irb:
 

@@ -1,5 +1,4 @@
 require 'csv'
-
 class Generator
 
     attr_accessor :millions

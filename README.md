@@ -6,7 +6,7 @@
 
 1. csv_generator.rb: is the main program in which a 'case' is used to access a 'normal' mode, 'benchmark/memory' mode and stok_stats. The first two create an object based on the class located in ./generatr/generator.rb, with the difference that the benchmark mode is more limited but returns other extra parameters.
 
- generator.rb: contains the Generator class, its variables are an input digit, the header and its 4 books. It also contains a "newFile" method which multiplies the input by a million and creates a file.csv by writing the header and so many million books to it.
+generator.rb: contains the Generator class, its variables are an input digit, the header and its 4 books. It also contains a "newFile" method which multiplies the input by a million and creates a file.csv by writing the header and so many million books to it.
 
 2. file.csv: In the first line is the header and in the following there will be as many millions of books as the input data says.
 
@@ -26,7 +26,7 @@ With the following command the gem was built:
 
 The following command is used to install the gem locally:
 
-    gem install ./largeCsvProcessing-2.0.0.gem
+    gem install ./largeCsvProcessing-2.0.2.gem
 
 The following command is used to install the gem remotely:
 
@@ -38,7 +38,7 @@ The following command is used to uninstall the gem:
 
 The following command is used to publish the gem to rubygems:
 
-    gem push largeCsvProcessing-2.0.0.gem
+    gem push largeCsvProcessing-2.0.2.gem
 
 To run the installed gem it can be accessed by irb:
 
