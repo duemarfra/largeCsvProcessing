@@ -26,7 +26,7 @@ With the following command the gem was built:
 
 The following command is used to install the gem locally:
 
-    gem install ./largeCsvProcessing-2.0.2.gem
+    gem install ./largeCsvProcessing-2.0.3.gem
 
 The following command is used to install the gem remotely:
 
@@ -38,7 +38,7 @@ The following command is used to uninstall the gem:
 
 The following command is used to publish the gem to rubygems:
 
-    gem push largeCsvProcessing-2.0.2.gem
+    gem push largeCsvProcessing-2.0.3.gem
 
 To run the installed gem it can be accessed by irb:
 

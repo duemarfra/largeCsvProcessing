@@ -1,5 +1,5 @@
 puts '******** welcome to your large csv processor ********'
-puts "options:\n0 for start benchmark mode\n1 for start normal mode program\n2 for run stock_stats (require run step 1)"
+puts "options:\n0 for start benchmark mode(your need: gem install benchmark-memory)\n1 for start normal mode program\n2 for run stock_stats (require run step 1)"
 
 option = gets.chomp
 
