@@ -24,6 +24,8 @@ class Generator
             File.open( './file.csv', 'a' ) { |row| row.write @@allBooks }
         
         }
+
+        true # <~ only valid for Rspec
         
     end
      

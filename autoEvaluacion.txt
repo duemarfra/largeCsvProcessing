@@ -1,0 +1,80 @@
+1.- LARGE CSV PROCESSING
+
+    1. ¿Puede generar un archivo de 1 GB? 0.5 pts
+
+        En modo normal si! mi ram es de 8Gb y eh creado archivos incluso de hasta 32Gb. En modo benchmark el numero maximó para ingreso de datos es 11 y por alguna razón la ram se satura.
+
+    2. ¿Posee un archivo del tamaño del doble de la memoria? 0.5 pts
+
+        Sí! mi ram es de 8Gb y eh creado archivos incluso de hasta 32Gb osea el cuadruple de la memoria
+
+    3. ¿Finaliza con el archivo de 1 GB? 1 pts
+
+        Sí!
+
+    4. ¿Finaliza con el archivo de tamaño del doble de la memoria? ¿Cómo se comporta la memoria durante la ejecución? 2 pts
+
+        En modo normal si! mi ram es de 8Gb y eh creado archivos incluso de hasta 32Gb. En modo benchmark el numero maximó para ingreso de datos es 11 y por alguna razón la ram se satura.
+
+    5. ¿Qué refacciones realizó sobre la solución original? 1 pts
+
+        * book_in_stock.rf ahora es obsoleto
+
+        * csv_reader.rb :
+
+            La clase CsvReader se modificó por completo para que no guarde en un array las filas del archivo.csv.
+
+            Él método read_in_csv_data ahora recorre las filas del archivo csv, lee el dato precio, lo transforma a float y lo suma a la variable 'sum'.
+
+            Él método total_value_in_stock solo retorna la variable 'sum'.
+
+    6. ¿Realizó un benchmark de la memoria en ruby? 1 pts
+
+    Sí, pero de ello tengo más preguntas que respuestas :'(
+
+
+2.- GEMS
+
+    1. ¿La gema está publicada? 0.5 pts
+
+        sí, en:
+
+            https://rubygems.org/gems/largeCsvProcessing
+
+            https://github.com/duemarfra/largeCsvProcessing/
+
+    2. ¿Se puede instalar la gema? 1 pts
+
+        sí, con el comando: gem install largeCsvProcessing
+
+    3. ¿Se puede utilizar la gema? Osea la gema cumple con una funcionalidad. 2~4pts.
+    
+        Sí, esta gema cumple con los requisitos del enunciado.
+
+    4. ¿Está documentado el uso de la gema? 1 pts
+    
+        sí! en: en README.md y readmeEs.txt
+
+    5. ¿Se puede desinstalar la gema? 0.5 pts
+    
+        sí, con el comando: gem uninstall largeCsvProcessing
+
+    6. ¿Realizaron pruebas (testing) de la gema? (Opcional) 1 pts
+
+        sí, por medio de un modulo bundler se instalo Rspec. Y se comprobó que corra la clase 'Generator' del archivo generator.rb
+
+
+PREGUNTAS
+* ¿Podría ser útil hospedar nuestro código en algún servidor?
+
+    Sí para tener un mejor control de versiones, para que otros clientes puedan acceder al codigo y lo modifiquen mediante un fork o por descargas y sea más funcional a cada persona. Para disponer nosotros mismos del código en cualquier lugar que estemos.
+
+* ¿Vale la pena tener una base de datos?
+
+    En el caso de estos programas tal ves no tanto, pero si llegasemos a tener datos "sensibles" definitivamente sería lo mejor el contar con una base de datos.
+
+¿Y si quiero que ahora la notificación sea una hora antes?
+----------------
+Podría crear un evento en Google Calendar y sincronizarlo desde ahí?
+----------------
+Ejerciten ese cerebruto y piensen alternativas para llegar al objetivo.
